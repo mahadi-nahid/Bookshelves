@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="BookshelvesPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>sust.bookshelves.entity.Suggestion</class>
+    <class>sust.bookshelves.entity.Commentlike</class>
+    <class>sust.bookshelves.entity.Follow</class>
+    <class>sust.bookshelves.entity.Comment</class>
+    <class>sust.bookshelves.entity.Wanttoread</class>
+    <class>sust.bookshelves.entity.Catagory</class>
+    <class>sust.bookshelves.entity.Readallready</class>
+    <class>sust.bookshelves.entity.Status</class>
+    <class>sust.bookshelves.entity.Notification</class>
+    <class>sust.bookshelves.entity.Author</class>
+    <class>sust.bookshelves.entity.Rating</class>
+    <class>sust.bookshelves.entity.Book</class>
+    <class>sust.bookshelves.entity.Favourite</class>
+    <class>sust.bookshelves.entity.Reading</class>
+    <class>sust.bookshelves.entity.Publisher</class>
+    <class>sust.bookshelves.entity.Statuslike</class>
+    <class>sust.bookshelves.entity.User</class>
+    <class>sust.bookshelves.entity.Userlogin</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bookshelves?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="sust"/>
+    </properties>
+  </persistence-unit>
+</persistence>

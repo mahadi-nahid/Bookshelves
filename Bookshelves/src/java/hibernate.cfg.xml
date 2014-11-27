@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bookshelves?zeroDateTimeBehavior=convertToNull</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">sust</property>
+    
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.generate_statistics">false</property>
+        <property name="hibernate.connection.zeroDateTimeBehavior">convertToNull</property>
+        
+        <mapping class="sust.bookshelves.entity.Author"/>
+        <mapping class="sust.bookshelves.entity.Book"/>
+        <mapping class="sust.bookshelves.entity.Catagory"/>
+        <mapping class="sust.bookshelves.entity.Comment"/>
+        <mapping class="sust.bookshelves.entity.Commentlike"/>
+        <mapping class="sust.bookshelves.entity.Favourite"/>
+        <mapping class="sust.bookshelves.entity.Follow"/>
+        <mapping class="sust.bookshelves.entity.Notification"/>
+        <mapping class="sust.bookshelves.entity.Publisher"/>
+        <mapping class="sust.bookshelves.entity.Rating"/>
+        <mapping class="sust.bookshelves.entity.Readallready"/>
+        <mapping class="sust.bookshelves.entity.Reading"/>
+        <mapping class="sust.bookshelves.entity.Status"/>
+        <mapping class="sust.bookshelves.entity.Statuslike"/>
+        <mapping class="sust.bookshelves.entity.Suggestion"/>
+        <mapping class="sust.bookshelves.entity.User"/>
+        <mapping class="sust.bookshelves.entity.Userlogin"/>
+        <mapping class="sust.bookshelves.entity.Wanttoread"/>
+    </session-factory>
+</hibernate-configuration>
